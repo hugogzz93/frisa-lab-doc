@@ -10,7 +10,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|spInput|[MaterialDePruebaSPInput](DBAdapter/InputReference#MatInput)|[FromQuery](fromQueryReference)|si|
+|spInput|[MaterialDePruebaSPInput](http://localhost:3000/docs/backend/DBAdapter/InputReference#materialdepruebasspinput)|[FromQuery](fromQueryReference)|si|
 
 
 ### HttpPost

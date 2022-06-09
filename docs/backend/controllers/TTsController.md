@@ -5,35 +5,35 @@
 ## Endpoints
 
 ### HttpGet
-> tld/materialesdeprueba/
+> tld/tts/
 
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|spInput|[MaterialDePruebaSPInput](DBAdapter/InputReference#MatInput)|[FromQuery](fromQueryReference)|si|
+|spInput|[TTSPInput](DBAdapter/InputReference#MatInput)|[FromQuery](fromQueryReference)|si|
 
 
 ### HttpPost
-> tld/materialesdeprueba
+> tld/tts
 
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|input|[MaterialDePrueba](DBAdapter/Models#MaterialDePrueba)|[FromBody](fromQueryReference)|si|
+|input|[TT](DBAdapter/Models#TT)|[FromBody](fromQueryReference)|si|
 
 
 ### HttpPut
-> tld/materialesdeprueba
+> tld/tts
 
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|input|[MaterialDePrueba](DBAdapter/InputReference#MatInput)|[FromQuery](fromQueryReference)|si|
+|input|[TT](DBAdapter/InputReference#MatInput)|[FromQuery](fromQueryReference)|si|
 |id|int|[FromUrl](fromUrlReference)|no|jV
 
 
 ### HttpDelete
-> tld/materialesdeprueba
+> tld/tts
 
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
@@ -47,7 +47,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|inputs|List[[MaterialDePrueba](DBAdapter/InputReference#MatInput)]|[FromQuery](fromQueryReference)|si|
+|inputs|List[[TT](DBAdapter/InputReference#MatInput)]|[FromQuery](fromQueryReference)|si|
 
 
 
