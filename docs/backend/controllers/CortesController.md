@@ -10,7 +10,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|spInput|[CorteSPInput](DBAdapter/InputReference#MatInput)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|spInput|[CorteSPInput](/DBAdapter/InputReference)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 
 
 ### HttpPost
@@ -19,7 +19,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|input|[Corte](DBAdapter/Models#Corte)|[FromBody](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|input|[Corte](/DBAdapter/Models#Corte)|[FromBody](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 
 
 ### HttpPut
@@ -28,7 +28,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|input|[Corte](DBAdapter/InputReference#MatInput)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|input|[Corte](/DBAdapter/InputReference)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 |id|int|[FromUrl](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromrouteattribute?view=aspnetcore-6.0Reference)|no|jV
 
 
@@ -47,7 +47,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|inputs|List[[Corte](DBAdapter/InputReference#MatInput)]|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|inputs|List[[Corte](/DBAdapter/InputReference)]|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 
 
 
