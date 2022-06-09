@@ -1,5 +1,5 @@
 
-[Codigo Fuente](sourceCodeReference)
+[Codigo Fuente](https://github.com/hugogzz93/anlab-backend/blob/eia-db/Controllers/MaterialesDePruebaController.cs)
 
 
 ## Endpoints
@@ -29,7 +29,7 @@
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
 |input|[CutUp](DBAdapter/InputReference#MatInput)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
-|id|int|[FromUrl](fromUrlReference)|no|jV
+|id|int|[FromUrl](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromrouteattribute?view=aspnetcore-6.0Reference)|no|jV
 
 
 ### HttpDelete
