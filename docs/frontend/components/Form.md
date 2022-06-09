@@ -1,7 +1,8 @@
 # Form
-Este articulo explica como crear formularios utilizando el componente [`Form`](https://github.com/hugogzz93/anlab-front/blob/master/src/components/Form/Form.jsx)
+Este articulo explica como crear formularios utilizando el componente [`Form`]
 
 ---
+[Codigo Fuente](https://github.com/hugogzz93/anlab-front/blob/master/src/components/Form/Form.jsx)
 
 ## Crear un Formulario
 `Form` espera por lo menos **dos parametros, los campos y un callback a llamar cuando se ingrese el formulario**.
@@ -229,10 +230,10 @@ El objeto `FormConfiguration` espera los siguientes parametros.
 |id|string|no|Id del campo, util para vincularlo con [FieldLayoutObject](Form#fieldlayoutobject)|
 |type|string = 'text' \| 'textarea' \| 'date' \| 'select' \| 'multi-file' |no|Tipo de input que aparecera|
 |label|string|no|El encabezado del campo|
-|rules|[RegisterOptions](react-hook-form.com/api/useform/register)|si|Reglas adicionales de validacion utilizando [react-hook-forms](react-hook-form.com)|
+|rules|[RegisterOptions](https://react-hook-form.com/api/useform/register)|si|Reglas adicionales de validacion utilizando [react-hook-forms](https://react-hook-form.com)|
 |optionsFn|SelectOption[]|type == 'select' ? si : no|Los campos con los que dispondra un select|
 |display|boolean (default: true)|si|Determina si se debe de esconder el campo|
-|onChange|({event: React.SyntheticEvent, data: FormData, formMethods: [UseFormOutput]("https://react-hook-form.com/api/useform")} => void) |si| Para extender funcionalidad, se puede mandar un callback que se ejecuta cada vez que se cambia el campo. El callback tendra acceso al contexto del formulario.|
+|onChange|({event: React.SyntheticEvent, data: FormData, formMethods: [UseFormOutput](https://react-hook-form.com/api/useform)} => void) |si| Para extender funcionalidad, se puede mandar un callback que se ejecuta cada vez que se cambia el campo. El callback tendra acceso al contexto del formulario.|
 |readOnly|boolean (default: false)|si|Determina si el valor del campo se puede editar.|
 |disabled|boolean (default: false)|si|Determina si el campo esta habliitado (La diferencia con readOnly es que cuando el campo esta desactivado, el valor no se envia al someter el formulario)|
 

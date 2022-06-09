@@ -2,6 +2,7 @@
 Este articulo explica como crear tablas para cualquier tipo de dato uilizando el componente [`Table`](https://github.com/hugogzz93/anlab-front/blob/master/src/components/Table/Table.jsx)
 
 ---
+[Codigo Fuente](https://github.com/hugogzz93/anlab-front/blob/master/src/components/Table/Table.jsx)
 
 ## Crear una Tabla
 `Table` espera **dos parametro datos y configuracion** para poder leer ese JSON.
