@@ -44,6 +44,60 @@ const sidebars = {
                 'frontend/Inputs/ThemeTextFieldElement',
             ]
         }
+    ],
+    backendSidebar: [
+        {
+            type: 'doc',
+            id: 'backend/intro',
+            label: 'Introduction'
+        },{
+            type: 'category',
+            label: 'Controllers',
+            items: [
+                'backend/controllers/ClientesController',
+                'backend/controllers/CortesController',
+                'backend/controllers/CutupsController',
+                'backend/controllers/DocumentosController',
+                'backend/controllers/EstandaresController',
+                'backend/controllers/ExperimentosController',
+                'backend/controllers/MaterialesDePruebaController',
+                'backend/controllers/MuestrasController',
+                'backend/controllers/OperacionesPiezaLabController',
+                'backend/controllers/OrdenesDeTrabajoController',
+                'backend/controllers/PiezasController',
+                'backend/controllers/ProveedoresController',
+                'backend/controllers/PruebasController',
+                'backend/controllers/TTsController',
+            ]
+        },{
+            type: 'category',
+            label: 'Models',
+            items: [
+                'backend/models/Cliente',
+                'backend/models/Colada',
+                'backend/models/Corte',
+                'backend/models/CutUp',
+                'backend/models/Documento',
+                'backend/models/Estandar',
+                'backend/models/Experimento',
+                'backend/models/Material',
+                'backend/models/MaterialDePrueba',
+                'backend/models/Muesta',
+                'backend/models/OperacionPiezaLab',
+                'backend/models/OperacionPrueba',
+                'backend/models/OrdenDeTrabajo',
+                'backend/models/Pieza',
+                'backend/models/Proveedor',
+                'backend/models/Prueba',
+                'backend/models/TT',
+            ]
+        },{
+            type: 'category',
+            label: 'DBAdapter',
+            items: [
+                'backend/DBAdapter/InputReference'
+            ]
+        }
     ]
 
 
