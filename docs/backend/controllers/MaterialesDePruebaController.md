@@ -10,7 +10,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|spInput|[MaterialDePruebaSPInput](http://localhost:3000/docs/backend/DBAdapter/InputReference#materialdepruebasspinput)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|spInput|[MaterialDePruebaSPInput](http://localhost:3000/frisa-lab-docs/docs/backend/DBAdapter/InputReference#materialdepruebasspinput)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 
 
 ### HttpPost

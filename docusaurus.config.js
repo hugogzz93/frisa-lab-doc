@@ -89,7 +89,7 @@ const config = {
             label: 'Database',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/hugogzz93/frisa-lab-doc',
             label: 'GitHub',
             position: 'right',
           },

@@ -1,3 +1,5 @@
+[Codigo Fuente](https://github.com/hugogzz93/anlab-backend/blob/eia-db/Controllers/MaterialesDePruebaController.cs)
+
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
