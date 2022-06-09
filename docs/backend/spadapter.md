@@ -14,7 +14,7 @@ Cuando se inicializa una clase que herede `SPInput`, se debe inicializar con el 
 
 Toda clase que herede de `SPInput` puede convertir sus propiedades en parametros de sql.
 Ya que cada stored procedure tiene una interfaz diferente, para evitar una explosion de codigo en tratar de codificar clases para cada
-interfaz, `SPInput` cuenta con atributos para sus propiedades. Cada propiedad puede utilizar el atributo [EnumerableFor](/Attributes#enumerablefor) para saber cuando enumerarse.
+interfaz, `SPInput` cuenta con atributos para sus propiedades. Cada propiedad puede utilizar el atributo `EnumerableFor` para saber cuando enumerarse.
 
 Por ejemplo,
 ```aspnet
