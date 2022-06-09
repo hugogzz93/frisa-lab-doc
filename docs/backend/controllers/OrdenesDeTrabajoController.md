@@ -1,5 +1,5 @@
 
-[Codigo Fuente](https://github.com/hugogzz93/anlab-backend/blob/eia-db/Controllers/MaterialesDePruebaController.cs)
+[Codigo Fuente](https://github.com/hugogzz93/anlab-backend/blob/eia-db/Controllers/OrdenesDeTrabajoController.cs)
 
 
 ## Endpoints
