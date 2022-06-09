@@ -2,7 +2,8 @@
 |Nombre|Tipo|Opcional|
 |---|---|---|
 |Id|string||
-|piezaId|string||
-|tipo|string||
+|ExperimentoId|string||
+|Descripcion|string||
+|Pruebas|List<Prueba>||
 
 ## Metodos
