@@ -82,7 +82,7 @@ const sidebars = {
                 'backend/models/Experimento',
                 'backend/models/Material',
                 'backend/models/MaterialDePrueba',
-                'backend/models/Muesta',
+                'backend/models/Muestra',
                 'backend/models/OperacionPiezaLab',
                 'backend/models/OperacionPrueba',
                 'backend/models/OrdenDeTrabajo',
