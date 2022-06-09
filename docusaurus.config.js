@@ -139,7 +139,7 @@ const config = {
             ],
           },
         ],
-        copyright: '',
+        copyright: `Frisa`,
       },
       prism: {
         theme: lightCodeTheme,
