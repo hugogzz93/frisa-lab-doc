@@ -1,7 +1,7 @@
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|Name|string||
+|Id|string|si|
+|Name|string|si|
 
 ## Metodos

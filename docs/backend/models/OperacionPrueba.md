@@ -1,13 +1,13 @@
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|PruebaId|string||
-|TTOperation|string||
-|TTTemp|decimal||
-|TTHrsOp|decimal||
-|TTMedioEnfriamiento|string||
-|QuimicaElemento|string||
-|MetalografiaAcero|string||
+|Id|string|si|
+|PruebaId|string|si|
+|TTOperation|string|si|
+|TTTemp|decimal|si|
+|TTHrsOp|decimal|si|
+|TTMedioEnfriamiento|string|si|
+|QuimicaElemento|string|si|
+|MetalografiaAcero|string|si|
 
 ## Metodos

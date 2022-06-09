@@ -1,8 +1,8 @@
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|piezaId|string||
-|tipo|string||
+|Id|string|si|
+|piezaId|string|si|
+|tipo|string|si|
 
 ## Metodos

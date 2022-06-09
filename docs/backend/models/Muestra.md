@@ -1,9 +1,9 @@
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|ExperimentoId|string||
-|Descripcion|string||
-|Pruebas|List[Prueba]||
+|Id|string|si|
+|ExperimentoId|string|si|
+|Descripcion|string|si|
+|Pruebas|List[Prueba]|si|
 
 ## Metodos

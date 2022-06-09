@@ -1,14 +1,14 @@
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|MaterialDePruebaId|string||
-|Longitud|decimal||
-|Grados|decimal||
-|Fecha|DateTime||
-|Estatus|long||
-|Observaciones|string||
-|TTTerminados|bool||
-|EnUso|bool||
+|Id|string|si|
+|MaterialDePruebaId|string|si|
+|Longitud|decimal|si|
+|Grados|decimal|si|
+|Fecha|DateTime|si|
+|Estatus|long|si|
+|Observaciones|string|si|
+|TTTerminados|bool|si|
+|EnUso|bool|si|
 
 ## Metodos

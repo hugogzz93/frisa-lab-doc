@@ -1,9 +1,9 @@
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|OrdenableId|string||
-|OrdenableType|string||
-|TipoOrden|string||
+|Id|string|si|
+|OrdenableId|string|si|
+|OrdenableType|string|si|
+|TipoOrden|string|si|
 
 ## Metodos

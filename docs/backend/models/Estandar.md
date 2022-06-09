@@ -2,15 +2,15 @@
 
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|ClienteId|string||
-|Cliente|Cliente||
-|ProveedorId|string||
-|Proveedor|Proveedor||
-|MaterialId|string||
-|Material|Material||
-|Codigo|string||
-|Subsegmento|string||
-|Piezas|List[Pieza]||
+|Id|string|si|
+|ClienteId|string|si|
+|Cliente|Cliente|si|
+|ProveedorId|string|si|
+|Proveedor|Proveedor|si|
+|MaterialId|string|si|
+|Material|Material|si|
+|Codigo|string|si|
+|Subsegmento|string|si|
+|Piezas|List[Pieza]|si|
 
 ## Metodos

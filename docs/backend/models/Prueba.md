@@ -1,10 +1,10 @@
 ## Propiedades
 |Nombre|Tipo|Opcional|
 |---|---|---|
-|Id|string||
-|MuestraId|string||
-|Muestra|Muestra||
-|Tipo|string||
-|OperacionesPrueba|List[OperacionesPrueba]||
+|Id|string|si|
+|MuestraId|string|si|
+|Muestra|Muestra|si|
+|Tipo|string|si|
+|OperacionesPrueba|List[OperacionesPrueba]|si|
 
 ## Metodos
