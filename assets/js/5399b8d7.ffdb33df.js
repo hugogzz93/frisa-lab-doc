@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfrisa_lab_doc=self.webpackChunkfrisa_lab_doc||[]).push([[7072],{2902:function(a){a.exports=JSON.parse('{"permalink":"/frisa-lab-doc/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

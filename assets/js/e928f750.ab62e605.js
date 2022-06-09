@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfrisa_lab_doc=self.webpackChunkfrisa_lab_doc||[]).push([[2440],{3842:function(a){a.exports=JSON.parse('{"label":"docusaurus","permalink":"/frisa-lab-doc/blog/tags/docusaurus","allTagsPath":"/frisa-lab-doc/blog/tags","count":4}')}}]);
