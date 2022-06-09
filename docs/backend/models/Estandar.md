@@ -11,6 +11,6 @@
 |Material|Material||
 |Codigo|string||
 |Subsegmento|string||
-|Piezas|List<Pieza>||
+|Piezas|List[Pieza]||
 
 ## Metodos

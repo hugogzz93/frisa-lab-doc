@@ -1,5 +1,4 @@
 ## Propiedades
-
 |Nombre|Tipo|Opcional|
 |---|---|---|
 |Id|string||
@@ -18,8 +17,8 @@
 |Grados|decimal||
 |ProveedorMPId|string||
 |ProveedorMP|Proveedor||
-|materiales|List<Material>||
-|tts|List<TT>||
+|materiales|List[Material]||
+|tts|List[TT]||
 |TTsTerminados|string||
 |CondicionTT|double||
 |AssignedCutUp|CutUp||

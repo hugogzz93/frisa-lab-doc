@@ -24,10 +24,10 @@
 |Observaciones|string||
 |Estado|string||
 |FechaCambioEstado|DateTime||
-|InputDocumentos|List<IFormFile>||
-|Documentos|List<Documentos>||
-|InputResultados|List<IFormFile>||
-|Resultados|List<Documentos>||
-|Muestras|List<Muestra>||
+|InputDocumentos|List[IFormFile]||
+|Documentos|List[Documentos]||
+|InputResultados|List[IFormFile]||
+|Resultados|List[Documentos]||
+|Muestras|List[Muestra]||
 
 ## Metodos

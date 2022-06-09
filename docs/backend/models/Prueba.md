@@ -5,6 +5,6 @@
 |MuestraId|string||
 |Muestra|Muestra||
 |Tipo|string||
-|OperacionesPrueba|List<OperacionesPrueba>||
+|OperacionesPrueba|List[OperacionesPrueba]||
 
 ## Metodos

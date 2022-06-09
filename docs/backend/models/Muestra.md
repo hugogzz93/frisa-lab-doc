@@ -4,6 +4,6 @@
 |Id|string||
 |ExperimentoId|string||
 |Descripcion|string||
-|Pruebas|List<Prueba>||
+|Pruebas|List[Prueba]||
 
 ## Metodos

@@ -15,7 +15,7 @@
 |recibida|bool||
 |perdida|bool||
 |proveedorMP|string||
-|OTLabs|List<OrdenDeTrabajo>||
+|OTLabs|List[OrdenDeTrabajo]||
 
 ## Metodos
 
