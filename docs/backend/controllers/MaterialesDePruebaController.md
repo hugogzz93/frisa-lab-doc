@@ -10,7 +10,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|spInput|[MaterialDePruebaSPInput](/DBAdapter/InputReference)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|spInput|[MaterialDePruebaSPInput](/backend/DBAdapter/InputReference.md)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 
 
 ### HttpPost
@@ -47,7 +47,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|inputs|List[[MaterialDePrueba](/DBAdapter/InputReference)]|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|inputs|List[[MaterialDePrueba](/backend/DBAdapter/InputReference.md)]|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 
 
 

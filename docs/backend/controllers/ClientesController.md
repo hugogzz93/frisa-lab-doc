@@ -10,7 +10,7 @@
 #### Parametros
 |Nombre|Tipo|Fuente|Opcional|
 |---|---|---|---|
-|spInput|[ClienteSPInput](/DBAdapter/InputReference)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
+|spInput|[ClienteSPInput](/backend/DBAdapter/InputReference.md)|[FromQuery](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.fromqueryattribute?view=aspnetcore-6.0)|si|
 
 
 ### HttpPost
