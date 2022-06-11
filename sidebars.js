@@ -98,6 +98,18 @@ const sidebars = {
                 'backend/DBAdapter/InputReference'
             ]
         }
+    ],
+    databaseSidebar: [
+        {
+            type: 'doc',
+            id: 'database/intro',
+            label: 'Introduction'
+        },{
+            type: 'doc',
+            id: 'database/spreference',
+            label: 'SP Reference'
+        }
+
     ]
 
 
