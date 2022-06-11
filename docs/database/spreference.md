@@ -6,7 +6,39 @@
 |Columan|System_type_name|is_nullable|
 
 
+## Funciones faltante
+:::danger
+Parece que no hay funcion para editar materiales de prueba, solo existe para crear.
+:::
+### Parametros
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|piezaId|string?|si|
+|longitudActual|decimal?|si|
+|gradosActuales|decimal?|si|
+|diametroInterior|decimal?|si|
+|diametroExterior|decimal?|si|
+|altura|decimal?|si|
+|condicionTT|string?|si|
+|observaciones|string?|si|
+|fecha|DateTime?|si|
+|recibida|bool?|si|
+|perdida|bool?|si|
+|proveedorMP|string?|si|
+
 ## uspL_AdministracionMaterialPrueba_Pieza
+
+### Parametros
+
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|PiezaId|UNIQUEIDENTIFIER|no|
+
+:::danger
+Falta Tipo Calificacion, para la pantalla de informacion pieza
+:::
+![Pantalla Informacion Pieza](/img/informacion_pieza.png)
+
 
 ### Output
 |Nombre|Tipo|Nullable|
@@ -32,6 +64,18 @@
 ## uspL_ConsultaTT
 
 ### Output
+
+:::danger
+Los datetimes deberian ser enteros, porque es cantidad de minutos.
+:::
+
+:::danger
+Parece haber un error:
+exec uspL_ConsultaTT @PiezaId='fa627d0f-a7cb-4ef5-be9a-02abd8355fa3'
+Deberia de traer un resultado.
+
+:::
+
 |Nombre|Tipo|Nullable|
 |---|---|---|
 |Receta|bigint|1|
@@ -180,6 +224,17 @@
 
 ## uspL_InformacionPieza_TratamientosTermicos
 
+:::danger
+Deberia traer datos para PiezaId=**fa627d0f-a7cb-4ef5-be9a-02abd8355fa3**, la unica pieza en el sistema.
+No se si es porque no hay datos de prueba o por error de SP.
+:::
+
+### Parametros
+
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|PiezaId|UNIQUEIDENTIFIER|no|
+
 ### Output
 |Nombre|Tipo|Nullable|
 |---|---|---|
@@ -240,6 +295,43 @@
 |PiezaId|uniqueidentifier|1|
 |Pieza|nvarchar(300)|1|
 
+
+## uspL_ActualizaMaterialPruebaCorte_Lab
+
+:::danger
+Deberia utilizar el id del corte para identificar cual corte editar.
+:::
+
+### Parametros
+
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|MaterialPruebaId|BIGINT|no|
+|NoCorte|TINYINT|no|
+|Fecha|DATETIME|no|
+|Longitud_mm|FLOAT|no|
+|Grados|SMALLINT|no|
+|EstatusCorteId|smallint|no|
+|Observaciones|VARCHAR(8000)|no|
+|EnUso|BIT|no|
+
+
+## uspL_GuardaMaterialPruebaCorte_Lab
+
+:::danger
+Deberia regresar el Id del nuevo corte
+:::
+
+### Parametros
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|MaterialPruebaId|BIGINT|no|
+|Fecha|DATETIME|no|
+|Longitud_mm|FLOAT|no|
+|Grados|SMALLINT|no|
+|EstatusCorteId|smallint|no|
+|Observaciones|VARCHAR(8000)|no|
+|EnUso|BIT|no|
 
 ## uspL_ListadoMaterialPruebaCorte_Lab
 
