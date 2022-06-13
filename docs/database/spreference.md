@@ -89,6 +89,10 @@ Deberia de traer un resultado.
 
 
 ## uspL_Experimentos_ListadoExperimentos
+:::danger
+Al ejecutarlo me arroja este error.
+**Incorrect syntax near 'CondicionTT'**.
+:::
 
 ### Output
 |Nombre|Tipo|Nullable|
@@ -158,6 +162,13 @@ Deberia de traer un resultado.
 
 ## uspL_Experimentos_ObtenerMaterial
 
+### Parametros
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|EstandarNum|Varchar(500)|no|
+|Resumenmaterial|Varchar(500)|no|
+
+
 ### Output
 |Nombre|Tipo|Nullable|
 |---|---|---|
@@ -202,6 +213,11 @@ Deberia de traer un resultado.
 
 
 ## uspL_Expermientos_ObtenerResumenMaterial
+
+### Parametros
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|EstandarNum|Varchar(500)|no|
 
 ### Output
 |Nombre|Tipo|Nullable|
@@ -379,6 +395,13 @@ Deberia regresar el Id del nuevo corte
 
 
 ## uspL_Experimentos_ObtenerProveedor
+
+### Parametros
+
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|Estandar|string|?|
+|Pieza|string|?|
 
 ### Output
 |Nombre|Tipo|Nullable|
