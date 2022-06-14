@@ -10,6 +10,7 @@
 :::danger
 Parece que no hay funcion para editar materiales de prueba, solo existe para crear.
 :::
+
 ### Parametros
 |Nombre|Tipo|Nullable|
 |---|---|---|
@@ -25,6 +26,17 @@ Parece que no hay funcion para editar materiales de prueba, solo existe para cre
 |recibida|bool?|si|
 |perdida|bool?|si|
 |proveedorMP|string?|si|
+
+
+:::danger
+Faltan funciones para obtener catalogos de
+
+* proveedores 
+* clientes 
+* motivos 
+
+(por ejemplo en alta experimentos para elegir uno).
+:::
 
 ## uspL_AdministracionMaterialPrueba_Pieza
 
