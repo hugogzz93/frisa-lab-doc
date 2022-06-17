@@ -43,6 +43,12 @@ const sidebars = {
                 'frontend/Inputs/ThemeTextAreaElement',
                 'frontend/Inputs/ThemeTextFieldElement',
             ]
+        },{
+            type: 'category',
+            label: 'Lib',
+            items: [
+                'frontend/Lib/UseEditableTable'
+            ]
         }
     ],
     backendSidebar: [
