@@ -420,3 +420,27 @@ Deberia regresar el Id del nuevo corte
 |---|---|---|
 |ProveedorId_Mp|uniqueidentifier|0|
 | Proveedor_MP|varchar(100)|0|
+
+
+## uspL_Metalografia_ObtenerCarga_Metalografia
+### Parameters
+|Nombre|Tipo|Nullable|
+|-|-|-|
+|Detenida|Bit|No|
+
+### Output
+|Nombre|Tipo|Nullable|
+|-|-|-|
+|Pieza|varchar(50)|si|
+|Estandar|int|si|
+|OrdenProceso|int|si|
+|DiasNegociados|int|si|
+|CantMuestras|int|si|
+|Observaciones|varchar(max)|si|
+|EstaDesviada|bit|si|
+|IdPieza|uniqueidentifier|si|
+|IdRevision|uniqueidentifier|si|
+|IdEstandar|uniqueidentifier|si|
+|IdProceso|uniqueidentifier|si|
+
+
