@@ -25,7 +25,7 @@ const sidebars = {
         {
             type: 'category',
             label: 'Componentes',
-            collapsed: false,
+            collapsed: true,
             items: [
                 'frontend/components/Table',
                 'frontend/components/Form'
@@ -33,7 +33,7 @@ const sidebars = {
         },{
             type: 'category',
             label: 'Inputs',
-            collapsed: false,
+            collapsed: true,
             items: [
                 'frontend/Inputs/Introduction',
                 'frontend/Inputs/ThemeCheckboxElement',
