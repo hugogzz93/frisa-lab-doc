@@ -476,8 +476,18 @@ No regresa ID de metalografia.
 
 ## uspL_Metalografia_PiezaInfoAdicional
 
+### Parameters
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|PiezaId|Guid|No
+
 
 ## uspL_Metalografia_BuscaResultado
+### Parameters
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|PiezaId|Guid|No
+
 
 ### Output
 |Nombre|Tipo|Nullable|
@@ -496,6 +506,12 @@ No regresa ID de metalografia.
 
 
 ## uspL_Metalografia_ObtenerCarga_Metalografia
+
+### Parameters
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|Detenida|bit|no|
+
 
 ### Output
 |Nombre|Tipo|Nullable|
