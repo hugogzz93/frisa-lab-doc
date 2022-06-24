@@ -157,6 +157,12 @@ Al ejecutarlo me arroja este error.
 
 ## uspL_Experimentos_ObtenerExperimentos
 
+### Parameters
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|FechaInicio|date|no|
+|FechaFin|date|no|
+
 ### Output
 |Nombre|Tipo|Nullable|
 |---|---|---|
@@ -178,7 +184,7 @@ Al ejecutarlo me arroja este error.
 |Nombre|Tipo|Nullable|
 |---|---|---|
 |EstandarNum|Varchar(500)|no|
-|Resumenmaterial|Varchar(500)|no|
+|ResumenMaterialId|Guid|no|
 
 
 ### Output
@@ -235,7 +241,8 @@ Al ejecutarlo me arroja este error.
 |Nombre|Tipo|Nullable|
 |---|---|---|
 |estandarid|varchar(100)|1|
-|resumenmaterial|varchar(500)|1|
+|resumenMaterial|varchar(500)|1|
+|resumenMaterialId|Guid|1|
 
 
 ## uspL_InformacionPieza_PruebasLab
@@ -423,6 +430,11 @@ Deberia regresar el Id del nuevo corte
 
 
 ## uspL_Metalografia_ObtenerCarga_Metalografia
+
+:::danger
+No regresa ID de metalografia.
+:::
+
 ### Parameters
 |Nombre|Tipo|Nullable|
 |-|-|-|
@@ -443,4 +455,357 @@ Deberia regresar el Id del nuevo corte
 |IdEstandar|uniqueidentifier|si|
 |IdProceso|uniqueidentifier|si|
 
+## uspL_Metalografia_CargaResultado
 
+### Paramertos
+|Nombre|Tipo|Nullable|
+|-|-|-|
+|piezaid|uniqueidentifier|NULL|
+|Pieza|nvarchar(300)|NULL|
+|Spot|varchar(300)|NULL|
+|PctAlfa|decimal(5,2)|NULL|
+|Grano|decimal(5,2)|NULL|
+|PctFino|decimal(5,2)|NULL|
+|Ala|decimal(5,2)|NULL|
+|TipoMicroEstructura|varchar(100)|NULL|
+|Observaciones|varchar(500)|NULL|
+|Condicion|varchar(500)|NULL|
+|EsTitanio|Bit|NULL|
+    
+### Output
+
+## uspL_Metalografia_PiezaInfoAdicional
+
+
+## uspL_Metalografia_BuscaResultado
+
+### Output
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|PiezaId|uniqueidentifier|1|
+|Pieza|nvarchar(300)|1|
+|Spot|varchar(300)|1|
+|PctAlfa|decimal(5|2)|
+|Grano|decimal(5|2)|
+|PctFino|decimal(5|2)|
+|Ala|decimal(5|2)|
+|TipoMicroEstructura|varchar(100)|1|
+|Observaciones|varchar(500)|1|
+|Condicion|varchar(500)|1|
+|EsTitanio|bit|1|
+
+
+## uspL_Metalografia_ObtenerCarga_Metalografia
+
+### Output
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|Pieza|varchar(50)|1|
+|Estandar|int|1|
+|OrdenProceso|int|1|
+|DiasNegociados|int|1|
+|CantMuestras|int|1|
+|Observaciones|varchar(max)|1|
+|EstaDesviada|bit|1|
+|IdPieza|uniqueidentifier|1|
+|IdRevision|uniqueidentifier|1|
+|IdEstandar|uniqueidentifier|1|
+|IdProceso|uniqueidentifier|1|
+
+
+## uspL_cutup_SelectWIPPiezaEstandard_lab
+
+### Output
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|NombrePieza|nvarchar(300)|1|
+
+
+## uspL_Cutup_ValidaPiezaCutUp_lab
+
+### Output
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|NombrePieza|nvarchar(300)|1|
+|ID|uniqueidentifier|0|
+|NumeroPiezaOrden|int|1|
+|NumeroPiezaEstandar|int|1|
+|InfoGeneral|uniqueidentifier|1|
+|Version|int|1|
+|VersionEstandar|int|1|
+|VersionOrdenProduccion|int|1|
+|EstadoProducto|int|1|
+|NumeroSerieCliente|nvarchar(300)|1|
+|NumeroSerieClienteDirecto|nvarchar(300)|1|
+|EstaEnEspera|bit|1|
+|TipoProducto|int|1|
+|MultiploHorizontal|int|1|
+|MultiploVertical|int|1|
+|EsProbeta|bit|1|
+|EsCutup|bit|1|
+|PreReceta|uniqueidentifier|1|
+|Barra|uniqueidentifier|1|
+|Colada|uniqueidentifier|1|
+|EsReposicionPorRechazo|bit|1|
+|IDSIF1|int|1|
+|FechaEmbarquePieza|datetime|1|
+|ComentariosCreacion|nvarchar(300)|1|
+|Sistema|int|1|
+|EsModificadaRevisarMetalurgia|bit|1|
+|Herrramienta_dropOrm|uniqueidentifier|1|
+|PorcentajeDeCostoProbetaVsPrecioPieza_dropOrm|float|1|
+|AsignacionMP|uniqueidentifier|1|
+|EsHerramienta|bit|1|
+|NombrePieza|nvarchar(300)|1|
+|PlantaAsignacionMP|uniqueidentifier|1|
+|PiezaReferenciaAsignacionMP|uniqueidentifier|1|
+|FueReplicadaPorTarea|bit|1|
+|Nivel|bigint|1|
+|FechaAlmacenamiento|datetime|1|
+|EsSafetyStock|bit|1|
+|DebeMuestrearMedidas|bit|1|
+|MuestreoMedidas|bit|1|
+|GrupoDesviacion|bigint|1|
+|GrupoNCR|bigint|1|
+|FechaEsCutUp|datetime|1|
+|EsDevolucion|bit|1|
+|CargaInicialSAP|bit|1|
+|ID|uniqueidentifier|0|
+|Devolucion|uniqueidentifier|1|
+|Tipo|int|1|
+|PesoFinalEmbarque|float|1|
+|OperacionActual|uniqueidentifier|1|
+|ProcesoActual|uniqueidentifier|1|
+|OrdenProduccionReferencia|uniqueidentifier|1|
+|OrdenProduccionActual|uniqueidentifier|1|
+|RevisionEstandarActual|uniqueidentifier|1|
+|RevisionEstandarReferencia|uniqueidentifier|1|
+|CondicionesTexto|nvarchar(max)|1|
+|TratamientoTermicoTexto|nvarchar(max)|1|
+|MaquinadoTexto|nvarchar(max)|1|
+|PNDTexto|nvarchar(max)|1|
+|EstaDesactivadoGenerarDocumentosDesdeVault|bit|1|
+|OptimisticLockField|int|1|
+|GCRecord|int|1|
+|ObjectType|int|1|
+|OrdenProduccionInterna|uniqueidentifier|1|
+|OrdenClienteProyectada|uniqueidentifier|1|
+|ID|uniqueidentifier|0|
+|ResumenEspecificacion|uniqueidentifier|1|
+|NumeroMultiplosVerticales|int|1|
+|NotasFactura|nvarchar(max)|1|
+|NumeroMultiplosHorizontales|int|1|
+|DiasConsignacion|int|1|
+|SerializadoFisico|bit|1|
+|EsConsignacion|bit|1|
+|TipoSerializado|int|1|
+|EsEspecificacionDificil|bit|1|
+|NumeroParte|nvarchar(300)|1|
+|RevisionNumeroParte|varchar(300)|1|
+|ObservacionesIngenieria|nvarchar(max)|1|
+|EsLeyendaCritica|bit|1|
+|PrimeraInspeccion|uniqueidentifier|1|
+|DocumentoMoM|uniqueidentifier|1|
+|CageCode|nvarchar(max)|1|
+|Aprobacion|uniqueidentifier|1|
+|DibujoCOS|uniqueidentifier|1|
+|DibujoClienteFrisa|uniqueidentifier|1|
+|TipoPieza|uniqueidentifier|1|
+|InfoGeneralLaboratorio|uniqueidentifier|1|
+|InfoGeneralMateriaPrima|uniqueidentifier|1|
+|InfoGeneralDimensiones|uniqueidentifier|1|
+|InfoGeneralPeso|uniqueidentifier|1|
+|InfoGeneralEmbarques|uniqueidentifier|1|
+|UsuarioConfigurando|uniqueidentifier|1|
+|Aplicacion|nvarchar(max)|1|
+|AplicacionProducto|uniqueidentifier|1|
+|DescripcionParte|nvarchar(max)|1|
+|DocumentoCutUpPlan|uniqueidentifier|1|
+|MoM|uniqueidentifier|1|
+|RevisionResumenLegacy|varchar(300)|1|
+|EsLoteFijoTT|bit|1|
+|RevisionMoM|uniqueidentifier|1|
+|DibujoMarcaje|uniqueidentifier|1|
+|UsuarioCreador|uniqueidentifier|1|
+|FechaCreacion|datetime|1|
+|SeparacionEntreMultiplos|float|1|
+|SeparacionEntreMultiplosVertical|float|1|
+|SobreMaterial|float|1|
+|DueñoDesarrolloProducto|uniqueidentifier|1|
+|DueñoMetalurgia|uniqueidentifier|1|
+|DueñoComercial|uniqueidentifier|1|
+|LeyendaCritica|uniqueidentifier|1|
+|CantidadRolados|int|1|
+|FBS|int|1|
+|EsCalculadoAlgoritmo|bit|1|
+|OperacionMarcaje|uniqueidentifier|1|
+|Contacto|uniqueidentifier|1|
+|NombreContacto|varchar(300)|1|
+|EsAutoLiberable|bit|1|
+|SeguimientoProduccion|varchar(300)|1|
+|SistemaMetricoDefault|int|1|
+|ReduccionMinimaForja|float|1|
+|DiseñoMadre|uniqueidentifier|1|
+|LineaForja|uniqueidentifier|1|
+|InfoGeneralCostos|uniqueidentifier|1|
+|ObservacionesDibujante|nvarchar(max)|1|
+|DiferenciaMinimaDurezasMilimetros|float|1|
+|OptimisticLockField|int|1|
+|GCRecord|int|1|
+|CondicionEntrega|int|1|
+|DocumentoPedido|uniqueidentifier|1|
+|DibujoClientePrevioTT|uniqueidentifier|1|
+|DibujoCotizacionForja|uniqueidentifier|1|
+|ScanPlanUT|uniqueidentifier|1|
+|ScanPlanPM|uniqueidentifier|1|
+|ScanPlanLP|uniqueidentifier|1|
+|DocumentoProcedimientoTT|uniqueidentifier|1|
+|DibujoLocalizacionProbeta|uniqueidentifier|1|
+|ProcedimientoInspeccionGeneral|uniqueidentifier|1|
+|ProcedimientoInspeccionDimensional|uniqueidentifier|1|
+|EsPiezaEspecial|bit|1|
+|EsCodigoVerdeGarcia|bit|1|
+|ComentariosImpresion|uniqueidentifier|1|
+|DocumentoBOM|uniqueidentifier|1|
+|DocumentoRFQ|uniqueidentifier|1|
+|EsPiezaComplicadaMaquinados|bit|1|
+|FechaBloqueo|datetime|1|
+|PcBloqueo|varchar(300)|1|
+|AplicacionBloqueo|varchar(100)|1|
+|DocumentoEmpaque|uniqueidentifier|1|
+|EsMediaLunaSimetrica|bit|1|
+|MensajesForja|nvarchar(max)|1|
+|Planta|uniqueidentifier|1|
+|EsMaquila|bit|1|
+|InfoGeneralHerramental|bigint|1|
+|Componente|uniqueidentifier|1|
+|HojaProcesoTT|uniqueidentifier|1|
+|DibujoClienteCotizacion|uniqueidentifier|1|
+|InfoGeneralDesarrolloProducto|uniqueidentifier|1|
+|FechaUltimaActualizacionGeometrias|datetime|1|
+|FechaUltimaActualizacionCostos|datetime|1|
+|FueExpanderEliminadoManualmente|bit|1|
+|TieneSobreExcesoCondicionEntrega|bit|1|
+|ClasificacionProduccion|uniqueidentifier|1|
+|EtapaProduccion|bigint|1|
+|FechaCambioEtapaProduccion|datetime|1|
+|TipoProducto|uniqueidentifier|1|
+|DisposicionForjaAbierta|int|1|
+|ComplejidadForja|int|1|
+|ComplejidadMaquinado|int|1|
+|ComplejidadMetalurgia|int|1|
+|CantidadPrototipos|int|1|
+|EsSpot|bit|1|
+|EstaSeleccionadaLineaOpcional|bit|1|
+|NoUsarRecubrimiento|bit|1|
+|ImpresionPrecio|int|1|
+|FormatoCertificado|int|1|
+|TipoRecubrimiento|uniqueidentifier|1|
+|ObservacionesLiberacionPiezas|nvarchar(max)|1|
+|PuedeUsarMpAceriaFrisa|bit|1|
+|FechaCreacionPiezas|datetime|1|
+|FechaLiberacionPiezas|datetime|1|
+|RequiereMPP|bit|1|
+|InfoGeneralDnp|bigint|1|
+|RevisionDibujoGeQuote|uniqueidentifier|1|
+|DocumentoQualityPlan|uniqueidentifier|1|
+|Reposicion|bit|1|
+|EsReposicion|bit|1|
+|OrdenAReponer|uniqueidentifier|1|
+|EsPrioridadVentas|bit|1|
+|ComplejidadProducto|int|1|
+|MedidasFinalesIncluyenSeparacionVertical|bit|1|
+|ObservacionesCliente|nvarchar(max)|1|
+|TipoProductoProduccion|tinyint|1|
+|NoRequiereTTDespuesdeForja|bit|1|
+|EsAprobadoMetalurgia|bit|1|
+|ParametrosMaquinadoModificados|bit|1|
+|CostoMaqValidado|bit|1|
+|DocumentoPM|uniqueidentifier|1|
+|RevisionPlanManufactura|uniqueidentifier|1|
+|Hornada|int|1|
+|DocumentoEnvolvente|uniqueidentifier|1|
+|ResumenEspecificacionParaImpresion|nvarchar(500)|1|
+|SpecAdicionalUno|uniqueidentifier|1|
+|SpecAdicionalDos|uniqueidentifier|1|
+|DescripcionComponentes|varchar(300)|1|
+|EsPiezaGrande|bit|1|
+|CantidadPrototiposMetalurgia|int|1|
+|FechaCreacionPiezasOriginal|datetime|1|
+|ResumenEspecificacionNombre|varchar(500)|1|
+|TituloResumenCertifica|nvarchar(500)|1|
+|EsNadcap|bit|1|
+|PlantillaProcesoCongelado|int|1|
+|FixProcess|uniqueidentifier|1|
+|PruebasMetalurgicas|uniqueidentifier|1|
+|UsuarioRevisorStd|uniqueidentifier|1|
+|DocumentoRevisionStd|uniqueidentifier|1|
+|DueñoMaquinados|uniqueidentifier|1|
+|DueñoCalidad|uniqueidentifier|1|
+|DueñoCalidad2|uniqueidentifier|1|
+|ProductoAeroespacial|bit|1|
+|EsProyectoOG|bit|1|
+|DiametroAgujero|float|1|
+|NumeroAgujeros|int|1|
+|DiametroAgujeroTrepanado|float|1|
+|NumeroAgujerosTrepanados|int|1|
+|NoProgramarBosch|bit|1|
+|FechaUltimaActualizacionDeResumen|datetime|1|
+|DibujoCADMaq|uniqueidentifier|1|
+|InfoGeneralCostosLibrosAzules|uniqueidentifier|1|
+|EsAlgoritmoTowers|bit|1|
+|PesoAproximadoAlgoritmoTowers|float|1|
+|DibujoPrecision|uniqueidentifier|1|
+|EsExpeditado|bit|1|
+|EsPEDForja|bit|1|
+|EsPEDAceria|bit|1|
+|NivelConfianzaSTD|int|1|
+|CortarseEnCaliente|bit|1|
+|ProcesaForjaMps|uniqueidentifier|1|
+|LlevaMarcarAgujeros|bit|1|
+
+
+## uspL_CutUps_ValidaPiezaEstandar
+
+### Output
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|estandar|varchar(300)|1|
+|Pieza|varchar(500)|1|
+
+## uspL_catProveedor 
+
+### Parameters
+|Nombre|Tipo|Nullable|descripcion|
+|---|---|---|-|
+|Estandar|Guid|si|Id del estandar|
+|Pieza|Guid|si|Id de la pieza|
+
+### Output
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|ProveedorId|Guid|si|
+|Proveedor|varchar|si|
+
+
+## uspL_Experimentos_GuardaExperimento
+
+### Parametros
+|Nombre|Tipo|Nullable|
+|---|---|---|
+|Estandar|INT|si|
+|ResumenMaterial|Varchar(400) |si|
+|MaterialId|uniqueidentifier |si|
+|Material|Varchar(300) |si|
+|Motivoid|int|si|
+|Piezaid|uniqueidentifier|si|
+|PiezaReferencia|INT|si|
+|FechaAlta|Datetime|si|
+|UsuarioAlta|Varchar(400)|si|
+|Proveedorid|uniqueidentifier|si|
+|Proveedor|Varchar(400)|si|
+|Clienteid|uniqueidentifier|si|
+|Cliente|Varchar(400)|si|
+|Subsegmento|Varchar(400)|si|
+|cutUp|int|si|
+|Justificacion|Varchar(400)|si|
