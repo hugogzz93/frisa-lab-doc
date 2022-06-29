@@ -1,0 +1,55 @@
+<section className="h-screen bg-frisa-pic" >
+  <div  className="px-6 h-full text-gray-800"  >
+    <div
+      className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6"
+    >
+      <div
+        className="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0"
+      >
+        <img
+           src="https://www.frisa.com/images/about-us/aerospace/logo.webp" 
+         /*  src={logo} */
+          className="w-full"
+          alt="Sample image"
+        />
+      </div>
+      <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
+      
+                <FormComponent
+                    onSubmit={onSubmit}
+                    data={{
+                    }}
+                    FormLayout = {LayoutLogin}
+                    configuration={{...configurationLogin, 
+                        actions: [{
+                            render: () => (
+                                <div className="grid grid-cols-4 gap-4">
+                                <Button className='flex align-center' 
+                              >
+                                   Login  <i style={{marginLeft: '.5em'}} className="fa-solid fa-sign-in"></i>
+                                </Button>
+                                
+                                </div>
+                            )
+                        }],
+                        fields: [
+                            {
+                                id: 'user',
+                                type: 'text',
+                                label: 'Usuario'
+                            },{
+                                id: 'password',
+                                type: 'password',
+                                label: 'Contraseña'
+                            }
+                        ]}}
+                />
+            
+
+  
+
+
+      </div>
+    </div>
+  </div>
+</section>

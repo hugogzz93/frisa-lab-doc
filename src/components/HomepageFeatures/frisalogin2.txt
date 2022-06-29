@@ -1,0 +1,69 @@
+<section className="h-full gradient-form bg-gray-200 md:h-screen items-center 	">
+  <div className="container py-12 px-6 h-full">
+    <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+      <div className="xl:w-10/12">
+        <div className="block bg-white shadow-lg rounded-lg">
+          <div className="lg:flex lg:flex-wrap g-0">
+            <div className="lg:w-6/12 px-4 md:px-0">
+              <div className="md:p-12 md:mx-6">
+                <div className="text-center">
+                <img
+                    className="mx-auto w-90"
+                    src="https://www.frisa.com/images/frisa-logo.webp"
+                    alt="aero"
+                  />
+                   <h4 className="text-xl text-gray-500 font-semibold mt-1 mb-12 pb-1">LABORATORIO</h4> 
+                </div>
+                <FormComponent
+                    onSubmit={onSubmit}
+                    data={{
+                    }}
+                    FormLayout = {LayoutLogin}
+                    configuration={{...configurationLogin, 
+                        actions: [{
+                            render: () => (
+                                <div className="grid grid-cols-1 gap-4">
+                                 <ButtonLogin  className='flex align-center' 
+                              >
+                                   Log in  <i style={{marginLeft: '.5em'}} 
+                                   className="fa-solid fa-sign-in"></i>
+                                </ButtonLogin>                               
+                                </div>
+                            )
+                        }],
+                        fields: [
+                            {
+                                id: 'user',
+                                type: 'text',
+                                label: 'Usuario'
+                            },{
+                                id: 'password',
+                                type: 'password',
+                                label: 'Contraseña'
+                            }
+                        ]}}
+                />
+         
+              </div>
+            </div>
+            <div
+              className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none"
+              style={{"background":"linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)"}}
+            >
+              <div className="text-center text-white px-4 py-6 md:p-12 md:mx-6">
+                  <img
+                    className="mx-auto w-90"
+                    src="https://www.frisa.com/images/about-us/aerospace/logo.webp"
+                    alt="aero"
+                  />
+                  <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">FORGING EVOLUTION</h4> 
+                </div>
+
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
