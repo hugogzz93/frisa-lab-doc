@@ -10,7 +10,7 @@ const config = {
   tagline: 'Documentacion',
   url: 'https://hugogzz93.github.io/',
   baseUrl: '/frisa-lab-doc/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
