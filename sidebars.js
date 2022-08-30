@@ -114,6 +114,10 @@ const sidebars = {
             type: 'doc',
             id: 'database/spreference',
             label: 'SP Reference'
+        },{
+            type: 'doc',
+            id: 'database/SPMapping',
+            label: 'SP Mapping'
         }
 
     ]
